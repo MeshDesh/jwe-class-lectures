@@ -1,0 +1,57 @@
+h1 {
+    color: blue;
+}
+
+.heading {
+    color: red;
+}
+
+.heading-main {
+    color: green;
+}
+
+.heading-secondary {
+    color: aqua;
+}
+
+h2 {
+    background-color: red;
+    color: white;
+}
+
+.celeb-img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.celeb-link {
+    font-size: 20px;
+}
+
+.header {
+    border: 1px red solid;
+}
+
+.city-item {
+    color: blue;
+}
+
+#city-item {
+    color: darkviolet;
+}
+
+ol[type="A"] .city-item{
+    font-size: 30px;
+}
+
+h3 {
+    color: red !important;
+}
+
+.heading-3 {
+    color: green;
+}
+
+#heading-3 {
+    color: blue;
+}
