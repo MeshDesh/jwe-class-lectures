@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    color: blue;
+}
+
+.heading {
+    color: red;
+    display: inline;
+}
+
+.heading-main {
+    color: green;
+}
+
+.heading-secondary {
+    color: aqua;
+}
+
+h2 {
+    background-color: red;
+    color: white;
+    /* padding: 20px 10px 20px 10px; // TOP RIGHT BOTTOM LEFT
+    padding: 10px 20px; // TOP & BOTTOM = 20px | LEFT & RIGHT = 10px */
+    padding: 10px;
+    /* margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px; */
+    margin: 50px 30px;
+}
+
+.celeb-img {
+    width: 30%;
+    border-radius: 10px;
+    border: 10px solid black;
+    display: block;
+}
+
+.celeb-link {
+    font-size: 20px;
+}
+
+.learning {
+    border: 1px red solid;
+}
+
+.city-item {
+    color: blue;
+}
+
+#city-item {
+    color: darkviolet;
+}
+
+ol[type="A"] .city-item{
+    font-size: 30px;
+}
+
+h3 {
+    color: red;
+}
+
+.heading-3 {
+    color: green;
+}
+
+#heading-3 {
+    color: blue;
+}
+
+.heading-3-span {
+    color: red;
+}
+
+.span-2 {
+    display: inline-block;
+}
+
+.span-3 {
+
+}
+
+.flex {
+    display: flex;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    color: white;
+    margin: 2px;
+}
+
+.navbar {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    margin-left: 40px;
+}
+
+.navbar-right {
+    margin-right: 40px;
+}
+
+.navbar-right-link {
+    text-decoration: none;
+    color: white;
+}
