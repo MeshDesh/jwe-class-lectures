@@ -69,3 +69,28 @@ console.log(firstNumber / 0)
 
 // 5. %
 console.log(firstNumber % secondNumber)
+
+// Conditions
+// 1. IF
+
+// let marks = 80
+
+// if (marks >= 90) { // 80 >= 90 => false
+//     console.log("Your marks are greater than 90.")
+// }
+
+// 2. IF ELSE
+const isJEECleared = false
+const isBITSCleared = false
+
+if (isJEECleared) { // Main Plan
+    console.log("Congrats, You cleared JEE")
+    console.log("You can join IIT by Aug")
+} else if (isBITSCleared) { // Secondary Plan
+    console.log("Congrats, You cleared BITS")
+    console.log("You can join by Aug")
+}
+else { // Backup Plan
+    console.log("Sorry, Your JEE not cleared")
+    console.log("Let's take a admission in private college")
+}

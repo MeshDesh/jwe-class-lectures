@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <title>My First Webpage</title>
+    </head>
+    <body>
+        <navbar class="navbar">
+            <div class="navbar-left">
+                <img src="https://www.theboringeducation.com/svg/logo.svg" />
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="navbar-right-link" id="navbar-right-link"
+                    >Product</a
+                >
+                <a href="#" class="navbar-right-link">Contact us</a>
+            </div>
+        </navbar>
+        <main>
+            <header class="learning">
+                <div>
+                    <h1 class="heading"> This is heading </h1>
+                    <span>hi</span>
+                    <h2> This is heading h2</h2>
+                    <h3> This is heading </h3>
+                    <h4> This is heading </h4>
+                    <h5> This is heading </h5>
+                    <h6> This is heading </h6>
+                    <p>This is Paragraph</p>
+                    <h1 class="heading-main"> This is another heading </h1>
+                    <h1 class="heading-secondary">
+                        This is and another heading
+                    </h1>
+                </div>
+                <div>
+                    <img
+                        src="https://images.mubicdn.net/images/cast_member/2184/cache-2992-1547409411/image-w856.jpg"
+                        class="celeb-img"
+                    />
+                    <a
+                        href="https://mubi.com/cast/tom-cruise"
+                        target="_blank"
+                        class="celeb-link"
+                        >View Profile</a
+                    >
+                </div>
+                <div>
+                    <h1>Write names of 5 Cities</h1>
+                    <ol type="A">
+                        <li class="city-item">Bangalore</li>
+                        <li class="city-item" id="city-item">Kolkata</li>
+                        <li>Delhi</li>
+                        <li>Mumbai</li>
+                        <li>Lucknow</li>
+                    </ol>
+                    <ol>
+                        <li class="city-item">Bangalore</li>
+                        <li class="city-item" id="city-item">Kolkata</li>
+                        <li>Delhi</li>
+                        <li>Mumbai</li>
+                        <li>Lucknow</li>
+                    </ol>
+                    <ul>
+                        <li>Bangalore</li>
+                        <li class="city-item">Kolkata</li>
+                        <li>Delhi</li>
+                        <li>Mumbai</li>
+                        <li>Lucknow</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="heading-3" id="heading-3"
+                        >My name is
+                        <span class="heading-3-span">James Bond</span></h3
+                    >
+                    <span class="span-2">How much Height?</span>
+                    <span class="span-3">So much Height.</span>
+                    <h3>Hi</h3>
+                </div>
+                <div class="flex">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                </div>
+            </header>
+            <section class="form">
+                <form>
+                    <div>
+                        <label>Enter your name</label>
+                        <input
+                            type="text"
+                            placeholder="Enter your name"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label>Enter your email</label>
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label>Enter your DOB</label>
+                        <input
+                            type="date"
+                            placeholder="Enter your DOB"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label>Enter your favorite color</label>
+                        <input
+                            type="color"
+                            placeholder="Enter your Color"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label>Choose your favorite city</label>
+                        <input
+                            type="radio"
+                            value="Delhi"
+                            name="city"
+                            id="delhi"
+                        />
+                        <label for="delhi">Delhi</label>
+                        <input
+                            type="radio"
+                            value="Bangalore"
+                            name="city"
+                            id="bangalore"
+                        />
+                        <label for="bangalore">Bangalore</label>
+                        <input
+                            type="radio"
+                            value="Chennai"
+                            name="city"
+                            id="chennai"
+                        />
+                        <label for="chennai">Chennai</label>
+                        <input
+                            type="radio"
+                            value="Kolkata"
+                            name="city"
+                            id="kolkata"
+                        />
+                        <label for="kolkata">Kolkata</label>
+                    </div>
+                    <div>
+                        <label>Select your favorite hoobies</label>
+                        <input
+                            type="checkbox"
+                            value="Painting"
+                            name="hobby"
+                            id="Painting"
+                        />
+                        <label for="Painting">Painting</label>
+                        <input
+                            type="checkbox"
+                            value="Singing"
+                            name="hobby"
+                            id="Singing"
+                        />
+                        <label for="Singing">Singing</label>
+                        <input
+                            type="checkbox"
+                            value="Swimming"
+                            name="hobby"
+                            id="Swimming"
+                        />
+                        <label for="Swimming">Swimming</label>
+                        <input
+                            type="checkbox"
+                            value="Gyming"
+                            name="hobby"
+                            id="Gyming"
+                        />
+                        <label for="Gyming">Gyming</label>
+                    </div>
+                    <div>
+                        <label>Choose your state</label>
+                        <select>
+                            <option>UP</option>
+                            <option>Delhi</option>
+                            <option>Punjab</option>
+                            <option>Hariyana</option>
+                            <option>Bihar</option>
+                            <option>MP</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="button">Register Now</button>
+                    </div>
+                </form>
+            </section>
+            <footer>
+                <h4>This is Footer</h4>
+            </footer>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
