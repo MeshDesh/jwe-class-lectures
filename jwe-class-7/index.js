@@ -1,76 +1,108 @@
-// // // // // Loops
-// // // // // 1. For
-// // // // // for(STARTING, ENDING, STEPS)
+// // // // // const x = 10
 
-// // // // for (let i = 0; i < 10; i = i + 1) { // (i < 10) -> 0 => 1 => 2 => 3 .... 9 => 10 < 10 => False
-// // // //     // if (i == 5) {
-// // // //     //     break
-// // // //     // }
-// // // //     console.log("HI", i) // 1st => HI 0 | 2nd => 0 + 7 => i = 7 => HI 7 | 3rd => 7(i) + 7 => 14 => 14 < 10 => False => Breaks
+// // // // // // if (x > 15) {
+// // // // // //     console.log("X is greater than 15")
+// // // // // // } else {
+// // // // // //     console.log('X is smaller than 15')
+// // // // // // }
+
+// // // // // x > 15 ? console.log("X is greater than 15") : console.log('X is smaller than 15')
+
+// // // // // 2. Nullish coalescing operator => Null || Undefined
+// // // // // const x = false
+
+// // // // // const isTruthyValue = x ?? 'Null not found'
+
+// // // // // // console.log(isTruthyValue)
+
+// // // // // if (x == null || x == undefined) {
+// // // // //     console.log('Null not found')
+// // // // // } else {
+// // // // //     console.log(x)
+// // // // // }
+
+// // // // // 3. this in JS
+// // // // const director = {
+// // // //     name: "S. S. Rajamauli",
+// // // //     profession: 'Director',
+// // // //     movies: ['Bahubali', 'RRR', 'Makkhi'],
+// // // //     getAllMovies: function () {
+// // // //         console.log(this.movies)
+// // // //     }
 // // // // }
 
-// // // // console.log("Loop broken")
+// // // // director.getAllMovies()
+// // // // console.log(this)
 
-// // // // 2. Scoping
-// // // if (true) {
-// // //     let x = 6
-// // //     console.log(x)
-// // // }
+// // // // ES6
 
-// // // console.log(x)
+// // // // 1. Advanced String Interpolation
 
-// // // // console.log(window) // Global
+// // // const firstName = "James"
+// // // const secondName = "Bond"
+// // // const age = 45
 
-// // // Equality
-// // console.log(4 == 6) // false
-// // console.log(4 > 6) // false
-// // console.log(4 < 6) // true
+// // // // console.log(firstName + " " + secondName + ". His age is " + age)
+// // // console.log(`${firstName} ${secondName}. His age is ${age}`)
 
-// // console.log('4' == 4) // true
-// // console.log('4' === 4) // false
-
-// // Array
-// const criketers = ["Sachin", "Dhoni", "Dravid", "Harbhajan"]
-
-// // const firstCricketer = "Sachin"
-// // const secondCricketer = "Dhoni"
-// // const thirdCricketer = "Dravid"
-
-// // console.log(firstCricketer)
-
-// // console.log(criketers[1])
-// // console.log(criketers.length)
-
-// // for (let i = 0; i < criketers.length; i = i + 1) {
-// //     console.log(criketers[i]) // 0 => Sachin | 1 => Dhoni | 2 => Dravid
+// // // 2. Default Params
+// // const sum = (a, b = 6) => {
+// //     // BEFORE => return a + b // a = 2 & b = undefined => 2 + undefined => NaN(Not a number)
+// //     return a + b // a = 2 & b = 6 => 2 + 6 => 8
 // // }
 
-// console.log(criketers[33])
+// // console.log(sum(2))
+// // console.log(sum(2, 8))
 
-// Object
-const book = {
-    name: "Murder at Orient Express",
-    page: 200,
-    author: "Agatha Cristie",
-    isAvailable: true,
-    anotherBooks: [
-        {
-            name: "Murder at Orient Express",
-            page: 200,
-            author: "Agatha Cristie",
-            isAvailable: true,
-        },
-        {
-            name: "Murder at Orient Express",
-            page: 200,
-            author: "Agatha Cristie",
-            isAvailable: true,
-        }
-    ]
+// // 3. destructuring of Objects & Array
+// // const director = {
+// //     name: "S. S. Rajamauli",
+// //     profession: 'Director',
+// //     movies: ['Bahubali', 'RRR', 'Makkhi'],
+// //     getAllMovies: function () {
+// //         console.log(this.movies)
+// //     }
+// // }
+
+// // const name = director.name
+// // const profession = director.profession
+
+// // const { name, profession, movies } = director
+
+// // console.log(director.name, name)
+// // console.log(director.profession, profession)
+// // console.log(director.movies, movies)
+// // console.log(director.getAllMovies())
+
+// // array destructuring
+// const students = ["Poorvi", "Aradhy", "Om", "Sufyan"]
+
+// // console.log(students[2]) // Om
+
+// // const om = students[2]
+// // const Poorvi = students[0]
+// // console.log(om) // Om
+
+// const [poorvi, aradhy, om, sufyan] = students
+// console.log(sufyan)
+
+// Shades of Functions
+// 1. High Order Function
+function sum(a, b, func) {
+    const result = a + b
+
+    func(result, log) // log2() => Callback Function
+
+    return result
 }
 
-const key = 'name'
+function log(result) {
+    console.log("Sum function result is ", result)
+}
 
-console.log(book[key])
-console.log(book.name)
-console.log(book.anotherBooks[0])
+function log2(result, func) {
+    console.log("Sum function 2 result is ", result)
+    func(result)
+}
+
+sum(7, 8, log2)

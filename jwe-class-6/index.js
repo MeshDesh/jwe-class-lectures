@@ -119,16 +119,23 @@
 // Function
 // 1. Normal
 
-// Add two numbers
-const result = function sum(a, b) {
-    // console.log(a + b)
-    return a + b
-}
+// // Add two numbers
+// const result = function sum(a, b) {
+//     // console.log(a + b)
+//     return a + b
+// }
 
 // // console.log(sum(2, 4)) // 1. 
 // const result = sum(2, 4) // 2. 
 // console.log(result)
 
-console.log(result(7, 9)) // 3. 
+// console.log(result(7, 9)) // 3. 
 
 // 2. Arrow Function
+// const sum = (a, b) => {
+//     return a + b
+// }
+
+const sum = (a, b) => a + b
+
+console.log(sum(1, 2))
