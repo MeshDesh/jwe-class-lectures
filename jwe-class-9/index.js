@@ -47,36 +47,32 @@
 
 // Todo App
 const todoSubmitButton = document.getElementById('todo-submit')
-const todoDeleteItemButtons = document.getElementsByClassName('todo-item-delete')
 
 // Add Click Event Handler
 todoSubmitButton.addEventListener('click', function () {
+    // Check if input field empty
     const todoInput = document.getElementById('todo-input')
+
+    const errorText = document.getElementById('error')
+
+    if (!todoInput.value) {
+        errorText.innerHTML = "enter todo item"
+
+        errorText.style.display = 'block'
+
+        return
+    }
+
+    // Hide error message
+    errorText.style.display = 'none'
 
     // Update into DOM
     const todoList = document.getElementById('todo-list')
 
     // Create a new Li tag
     const listTag = document.createElement('li')
-    listTag.innerHTML = `${todoInput.value} <button class="todo-item-delete">Delete</button>`
+    listTag.innerHTML = `${todoInput.value}`
 
     // Add into the UL list
     todoList.appendChild(listTag)
 })
-
-// todoDeleteItemButtons.forEach(function (todoDeleteItemButton) {
-//     // On Deleting an item
-//     todoDeleteItemButton.addEventListener('click', function (e) {
-//         console.log("HIII")
-//     })
-// })
-
-
-// TODO: For Next Class
-// for (let todoDeleteItemButton of todoDeleteItemButtons) {
-//     // On Deleting an item
-//     console.log("HI")
-//     todoDeleteItemButton.addEventListener('click', function (e) {
-//         this.parentNode.remove()
-//     })
-// }
